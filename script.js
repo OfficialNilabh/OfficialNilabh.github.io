@@ -1,39 +1,20 @@
-// Define variables
-const aboutText = document.querySelector('.about-text');
-const navButtons = document.querySelectorAll('.button');
-const contentSection = document.querySelector('#content-section');
-
-// Define content for different sections
-const sections = {
-    projects: "Content for the Projects section goes here.",
-
-
-
-
-
-
-    career: "Content for the Career section goes here.",
-
-
-
-
-
-
-
-    skills: "Content for the Skills section goes here.",
-
-
-
-
-
-
-    
-    extras: "Content for the Extras section goes here."
-};
-
 // Function to change content based on button click
 function changeSectionContent(sectionName) {
-    contentSection.innerHTML = sections[sectionName];
+    const contentSection = document.querySelector('#content-section');
+
+    // Use AJAX to load external HTML content
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            contentSection.innerHTML = xhr.responseText;
+        }
+    };
+
+    // Define the URL of the external HTML file based on the sectionName
+    const url = sectionName + '.html';
+
+    xhr.open('GET', url, true);
+    xhr.send();
 }
 
 // Event listeners for button clicks
