@@ -6,7 +6,7 @@ body, ul {
 
 /* Apply some basic styling with modern fonts */
 body {
-    font-family: 'Poppins', sans-serif; /* Use Poppins font from Google Fonts */
+    font-family: 'Poppins', sans-serif;
     background-color: #f0f0f0;
     text-align: center;
 }
@@ -31,7 +31,7 @@ header {
 
 #profile-info h1, #profile-info p {
     margin: 10px 0;
-    font-family: 'Roboto', sans-serif; /* Use Roboto font from Google Fonts */
+    font-family: 'Roboto', sans-serif;
 }
 
 #social-links {
@@ -52,78 +52,84 @@ section {
     background-color: #fff;
     border-radius: 0;
     padding: 20px;
-    font-family: 'Open Sans', sans-serif; /* Use Open Sans font from Google Fonts */
+    font-family: 'Open Sans', sans-serif;
 }
 
 .about-text {
     margin: 0;
 }
 
-#nav-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: black;
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    margin: 10px;
-    border-radius: 5px;
-    text-align: center;
-    width: 180px;
-    line-height: 2.3;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat font from Google Fonts */
-}
-
-.button img {
-    max-width: 200px;
-    margin: 10px 0;
-}
-
-.button span {
-    font-size: 20px;
-    font-family: 'Quicksand', sans-serif; /* Use Quicksand font from Google Fonts */
-}
-
-.button:hover {
-    background-color: #222;
-}
-
-#about-projects hr {
-    border: none;
-    height: 3px;
-    width: 1500px;
-    background-color: #333;
-}
-
-#profile-info hr {
-    border: none;
-    height: 3px;
-    width: 500px;
-    background-color: #000000;
-}
-
 #content-section {
     display: block;
 }
 
-/* Style for dummy pages */
-.dummy-page {
-    display: none;
+#about-projects hr {
+    height: 2px;
+    background-color: #333;
+}
+#content-section hr {
+    height: 2px;
+    background-color: #333;
+}
+#skills hr{
+    height: 2px;
+    background-color: #333;
+}
+/* Style for project sections */
+.project {
+    margin: 20px 0;
 }
 
-.dummy-page h2 {
+.project h3 {
     font-size: 24px;
+    margin: 0;
+    color: #333;
 }
 
-.dummy-page p {
+.project p {
     font-size: 18px;
+    color: #666;
+}
+
+.project a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0077b6;
+}
+
+/* Style for skills section */
+#skills h2.center-align {
+    font-size: 28px;
+    text-align: center;
+    color: #333;
+}
+
+/* Style for tools and software section */
+#tools-software h2.center-align {
+    font-size: 28px;
+    text-align: center;
+    color: #333;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.progress {
+    color: #fff;
+    background-color: #4e4e4e;
+    border-radius: 5px;
+    padding: 5px 70px;
+}
+
+/* Style for filled progress bar */
+.progress-filled {
+    background-color: #0077b6;
+    border-radius: 5px;
+    padding: 5px 0;
 }
