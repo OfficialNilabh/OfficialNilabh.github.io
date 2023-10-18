@@ -1,0 +1,129 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply some basic styling with modern fonts */
+body {
+    font-family: 'Poppins', sans-serif; /* Use Poppins font from Google Fonts */
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile-info img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#profile-info h1, #profile-info p {
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif; /* Use Roboto font from Google Fonts */
+}
+
+#social-links {
+    margin-top: 10px;
+}
+
+#social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#social-links a:hover {
+    text-decoration: underline;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 0;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif; /* Use Open Sans font from Google Fonts */
+}
+
+.about-text {
+    margin: 0;
+}
+
+#nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 180px;
+    line-height: 2.3;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font from Google Fonts */
+}
+
+.button img {
+    max-width: 200px;
+    margin: 10px 0;
+}
+
+.button span {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif; /* Use Quicksand font from Google Fonts */
+}
+
+.button:hover {
+    background-color: #222;
+}
+
+#about-projects hr {
+    border: none;
+    height: 3px;
+    width: 1500px;
+    background-color: #333;
+}
+
+#profile-info hr {
+    border: none;
+    height: 3px;
+    width: 500px;
+    background-color: #000000;
+}
+
+#content-section {
+    display: block;
+}
+
+/* Style for dummy pages */
+.dummy-page {
+    display: none;
+}
+
+.dummy-page h2 {
+    font-size: 24px;
+}
+
+.dummy-page p {
+    font-size: 18px;
+}
